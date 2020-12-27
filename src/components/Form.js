@@ -22,8 +22,15 @@ export default function Form() {
   };
   return (
     <div>
-      <input type="text" onChange={handleOnChange} value={title} />
-      <button onClick={createTodo}>Add Todo</button>
+      <input
+        type="text"
+        onChange={handleOnChange}
+        value={title}
+        placeholder="type.."
+      />
+      <button className="add" onClick={createTodo}>
+        Add
+      </button>
     </div>
   );
 }

@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: pink;
+  font-family: "Montserrat", sans-serif;
+}
 .App {
   text-align: center;
+  background-color: #333;
+  width: 600px;
+  min-height: 800px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.App h1 {
+  padding: 20px;
+  color: white;
+}
+.App input {
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+}
+button.add {
+  width: 80px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  font-size: 20px;
+  transition: 0.3s ease-in linear;
+}
+button.add:hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+p.byAh {
+  float: right;
+  font-size: 24px;
+}
+
+button.deleteBtn,
+button.completeBtn {
+  background: transparent;
+  border: none;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+button.deleteBtn:hover {
+  border-bottom: 2px solid red;
+}
+button.completeBtn:hover {
+  border-bottom: 2px solid greenyellow;
+}
+.complete {
+  text-decoration: line-through;
 }
